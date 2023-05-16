@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name" translatable="false">FPV Object Detection</string>
+    <string name="fpv_feed" translatable="false">FPV\nDrones</string>
+    <string name="waiting_for_usb_device">Please Connect Goggles</string>
+    <string name="usb_device_approved">USB device approved</string>
+    <string name="usb_device_detached_waiting">Goggles Disconnected</string>
+    <string name="usb_device_found">Goggles Connected</string>
+    <string name="waiting_for_video">Waiting For Video…</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="performance">Performance</string>
+    <string name="privacy">Privacy</string>
+    <string name="video_preset">Video Preset</string>
+    <string name="video_preset_default">Default</string>
+    <string name="video_preset_conservative">Conservative</string>
+    <string name="video_preset_aggressive">Aggressive</string>
+    <string name="video_preset_legacy" translatable="false">Legacy</string>
+    <string name="video_preset_legacy_buffered">Legacy Buffered</string>
+    <string name="video_player">Video Player</string>
+    <string name="full_screen" translatable="false">Fullscreen</string>
+    <string name="full_screen_summary">Can also be toggled by double-tapping or pinching on the video player.</string>
+    <string name="show_watermark">Show watermark</string>
+
+    <string name="object_detection_minimal_confidence_interval">Object Detection Settings</string>
+    <string name="object_detection_class">Object Detection Class</string>
+    <string name="object_detection_minimal_confidence_text">Minimum Confidence Interval (%)</string>
+
+    <string name="checkBoxPerson">Persons</string>
+    <string name="checkBoxPerson_When_Enable_Text">Disable persons detection</string>
+    <string name="checkBoxPerson_When_Disable_Text">Enable persons detection</string>
+
+    <string name="checkBoxVehicle">Vehicles</string>
+    <string name="checkBoxVehicle_When_Enable_Text">Disable vehicles detection</string>
+    <string name="checkBoxVehicle_When_Disable_Text">Enable vehicles detection</string>
+
+    <string name="checkBoxWeapon">Weapons</string>
+    <string name="checkBoxWeapon_When_Enable_Text">Disable weapons detection</string>
+    <string name="checkBoxWeapon_When_Disable_Text">Enable weapons detection</string>
+</resources>
