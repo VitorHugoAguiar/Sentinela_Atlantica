@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="waiting_for_usb_device">Conecte o dispositivo USB…</string>
+    <string name="usb_device_approved">Dispositivo USB aprovado</string>
+    <string name="usb_device_detached_waiting">Dispositivo USB não detectado\n\nConecte o dispositivo USB…</string>
+    <string name="usb_device_found">Dispositivo USB encontrado.</string>
+    <string name="waiting_for_video">Aguardando o streaming de video…</string>
+    <string name="title_activity_settings">Configurações</string>
+
+    <!-- Settings -->
+    <string name="performance">Performance</string>
+    <string name="privacy">Privado</string>
+    <string name="video_preset">Definições de Video</string>
+    <string name="video_preset_default">Padrão</string>
+    <string name="video_preset_conservative">Conservador</string>
+    <string name="video_preset_aggressive">Agressivo</string>
+    <string name="video_preset_legacy_buffered">Legacy em buffer</string>
+    <string name="video_player">Reprodução Vídeo</string>
+    <string name="full_screen_summary">O modo fullscreen também pode ser activo com duplo clique ou com dois dedos no ecrã.</string>
+    <string name="show_watermark">Mostrar marca de água</string>
+
+    <string name="object_detection_minimal_confidence_interval">Configuração da detecção de objectos</string>
+    <string name="object_detection_class">Classes da detecção de objectos</string>
+    <string name="object_detection_minimal_confidence_text">Intervalo mínimo de confiança (%)</string>
+
+    <string name="checkBoxPerson">Pessoas</string>
+    <string name="checkBoxPerson_When_Enable_Text">Desative a detecção de pessoas</string>
+    <string name="checkBoxPerson_When_Disable_Text">Ative a detecção de pessoas</string>
+
+    <string name="checkBoxVehicle">Veículos</string>
+    <string name="checkBoxVehicle_When_Enable_Text">Desative a detecção de veículos</string>
+    <string name="checkBoxVehicle_When_Disable_Text">Ative a detecção de veículos</string>
+
+    <string name="checkBoxWeapon">Armas</string>
+    <string name="checkBoxWeapon_When_Enable_Text">Desative a detecção de armas</string>
+    <string name="checkBoxWeapon_When_Disable_Text">Ative a detecção de armas</string>
+</resources>
