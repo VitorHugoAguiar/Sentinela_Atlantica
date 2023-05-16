@@ -1,0 +1,75 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/performance">
+
+        <ListPreference
+            app:defaultValue="default"
+            app:entries="@array/video_preset_titles"
+            app:entryValues="@array/video_preset_values"
+            app:key="VideoPreset"
+            app:title="@string/video_preset"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Model">
+
+        <CheckBoxPreference
+            android:title="Yolov5 N (+++velocity, +precison)"
+            android:defaultValue="true"
+            android:key="ModelN" />
+
+        <CheckBoxPreference
+            android:title="Yolov5 S (++velocity, ++precison)"
+            android:defaultValue="false"
+            android:key="ModelS" />
+
+        <CheckBoxPreference
+            android:title="Yolov5 M (+velocity, +++precison)"
+            android:defaultValue="false"
+            android:key="ModelM" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/object_detection_minimal_confidence_interval">
+
+        <SeekBarPreference
+            android:defaultValue="25"
+            android:key="SeekBarMinimumConfidenceInterval"
+            android:max="100"
+            android:progress="0"
+            android:title="@string/object_detection_minimal_confidence_text"
+            app:min="0"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/object_detection_class">
+
+        <CheckBoxPreference
+            android:title="@string/checkBoxPerson"
+            android:defaultValue="true"
+            android:key="person"
+            android:summaryOn="@string/checkBoxPerson_When_Enable_Text"
+            android:summaryOff="@string/checkBoxPerson_When_Disable_Text"/>
+
+        <CheckBoxPreference
+            android:title="@string/checkBoxVehicle"
+            android:defaultValue="false"
+            android:key="vehicle"
+            android:summaryOn="@string/checkBoxVehicle_When_Enable_Text"
+            android:summaryOff="@string/checkBoxVehicle_When_Disable_Text"/>
+
+        <CheckBoxPreference
+            android:title="@string/checkBoxWeapon"
+            android:defaultValue="false"
+            android:key="weapon"
+            android:summaryOn="@string/checkBoxWeapon_When_Enable_Text"
+            android:summaryOff="@string/checkBoxWeapon_When_Disable_Text"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

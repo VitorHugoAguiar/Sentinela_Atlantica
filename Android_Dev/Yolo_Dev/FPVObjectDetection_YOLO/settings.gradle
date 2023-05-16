@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "FPV Object Detection"
+include ':app', ':tensorflow-lite' //':lib_interpreter', ':lib_task_api'
+
+include ':OpenCVLib470'
+
+include ':sample',':gpuv'
+
+

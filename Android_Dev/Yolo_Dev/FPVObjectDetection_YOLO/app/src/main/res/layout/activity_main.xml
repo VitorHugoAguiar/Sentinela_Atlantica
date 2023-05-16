@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBitmap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.fpvobjectdetection.streaming.gl.SurfaceView
+        android:id="@+id/fpvView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:surface_type="texture_view" />
+
+<com.fpvobjectdetection.customview.OverlayView2
+    android:id="@+id/tracking_overlay"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+<TextView
+    android:id="@+id/watermarkView"
+    style="@style/text_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginBottom="10dp"
+    android:scaleX="2"
+    android:scaleY="2"
+    app:drawableTopCompat="@drawable/ic_emgfalogo"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@id/fpvView" />
+
+
+<com.fpvobjectdetection.OverlayView
+    android:id="@+id/overlayView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+</com.fpvobjectdetection.OverlayView>
+
+
+    <ToggleButton
+        android:id="@+id/simpleToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:checked="true"
+        android:layout_centerHorizontal="true"
+        android:textOff="Enable"
+        android:textOn="Disable"
+        android:textColor="#ffff"
+        android:background="@drawable/btn_toggle"
+        />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/settingsButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="40dp"
+    android:clickable="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/exo_ic_settings" />
+
+
+    <ImageView
+    android:id="@+id/imgPrint"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
